@@ -1,0 +1,107 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Style for the header title section */
+.header-title {
+    display: inline-block;
+}
+
+/* Style for the language switcher */
+.lang-switcher {
+    display: inline-block;
+}
+
+.lang-switcher ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lang-switcher li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.lang-switcher a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+.lang-switcher a:hover {
+    text-decoration: underline;
+}
+
+.blinking {
+    animation: blink 1s steps(5, start) infinite;
+    /* Adjust the color as needed */
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+header h1:before {
+    content: "";
+    font-size: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header h1 {
+    color: #00ff00;
+}
+
+th,
+hr,
+header {
+    border-bottom: 1px dashed #00ff00;
+}
+
+
+
+/* Style for the header container */
+.accordion {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-header {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    text-align: left;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+}
+
+.accordion-content {
+    padding: 10px;
+    background-color: #f9f9f9;
+    display: none;
+    overflow: hidden;
+    border-top: 1px solid #ddd;
+}
+
+.accordion-header.active+.accordion-content {
+    display: block;
+}

@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/custom-styles.css' | relative_url }}">
     {% include head-custom.html %}
+
 </head>
 
 <body>
@@ -14,9 +16,18 @@
     <header>
         <div class="container">
             <a id="a-title" href="{{ '/' | relative_url }}">
-                <h1>{{ site.title | default: site.github.repository_name }}</h1>
+                <h1>root@{{ site.title | default: site.github.repository_name }} $ <span class="blinking">_</span></h1>
             </a>
-            <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+
+            <nav class="lang-switcher">
+                <ul>
+                    {% if page.lang == "tr" %}
+                    <li><a href="/en/">English</a></li>
+                    {% else %}
+                    <li><a href="/tr/">Türkçe</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
         </div>
     </header>
 
