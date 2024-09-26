@@ -5,12 +5,10 @@
     padding: 10px;
 }
 
-/* Style for the header title section */
 .header-title {
     display: inline-block;
 }
 
-/* Style for the language switcher */
 .lang-switcher {
     display: inline-block;
 }
@@ -62,46 +60,48 @@ header h1 {
 }
 
 th,
-hr,
 header {
     border-bottom: 1px dashed #00ff00;
 }
 
-
-
-/* Style for the header container */
-.accordion {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 10px;
+hr {
+    height: 0;
+    border: 0;
+    border-bottom: 1px dashed #00ff00;
+    color: #00ff00;
 }
 
-.accordion-item {
-    margin-bottom: 10px;
+.highlight .gi {
+    color: #00ff00;
 }
 
-.accordion-header {
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    text-align: left;
-    outline: none;
-    border: none;
-    width: 100%;
-    font-size: 18px;
+pre {
+    color: #00ff00;
 }
 
-.accordion-content {
-    padding: 10px;
-    background-color: #f9f9f9;
-    display: none;
-    overflow: hidden;
-    border-top: 1px solid #ddd;
+
+.highlight .s,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .s2,
+.highlight .sh,
+.highlight .sx,
+.highlight .s1 {
+    color: #00ff00;
 }
 
-.accordion-header.active+.accordion-content {
-    display: block;
+.highlight .m,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .il,
+.highlight .mo,
+.highlight .mb,
+.highlight .mx {
+    color: #00ff00;
+}
+
+.highlight .ss {
+    color: #00ff00;
 }

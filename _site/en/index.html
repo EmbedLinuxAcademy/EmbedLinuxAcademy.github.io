@@ -5,7 +5,7 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/style.css?v=7217bbc66d49de0dc40ad3aa03b16fc1ead37ce8">
+    <link rel="stylesheet" href="/assets/css/style.css?v=b935e4fd8ded7efb530cf1ff91720d11c07e133a">
     <link rel="stylesheet" href="/assets/css/custom-styles.css">
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
@@ -43,63 +43,51 @@
 
     <div class="container">
         <section id="main_content">
-            <h1 id="welcome-to-embedlinuxacademy">Welcome to EmbedLinuxAcademy</h1>
-
-<p>Explore tutorials on <strong>C</strong>, <strong>C++</strong>, <strong>Embedded Linux</strong>, <strong>Yocto</strong>, and <strong>Kernel Driver Development</strong>.</p>
-
-<h2 id="tutorials">Tutorials</h2>
-
-<!-- Accordion Menu -->
-<div class="accordion">
-  <div class="accordion-item">
-    <button class="accordion-header" onclick="toggleAccordion(this)">
-      Introduction to Yocto Build
-    </button>
-    <div class="accordion-content">
-      <p>This section covers the basics of getting started with EmbedLinuxAcademy.</p>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <button class="accordion-header" onclick="toggleAccordion(this)">
-      Section 2: Advanced Topics
-    </button>
-    <div class="accordion-content">
-      <p>Advanced topics in Embedded Linux and Kernel Driver Development.</p>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <button class="accordion-header" onclick="toggleAccordion(this)">
-      Section 3: Yocto Builds
-    </button>
-    <div class="accordion-content">
-      <p>Learn about Yocto Builds and how to customize them for your project.</p>
-    </div>
-  </div>
-</div>
-
-<script>
-  function toggleAccordion(element) {
-    element.classList.toggle("active");
-    var content = element.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  }
-</script>
+            <h1 id="welcome-to-embedded-linux-academy">Welcome to Embedded Linux Academy</h1>
 
 <ul>
-  <li>Introduction to Yocto Build</li>
-  <li><a href="tutorials/cpp-basics">Basics of C++ for Embedded Systems</a></li>
-  <li><a href="tutorials/kernel-driver-intro">Kernel Driver Development 101</a></li>
+  <li><strong>Kernel Module Development</strong>
+    <ol>
+      <li><a href="kernel_module_dev/Introduction-to-Linux-Kernel-Modules.md">Introduction to Linux Kernel Modules</a></li>
+      <li><a href="kernel_module_dev/Setting-Up-the-Development-Environment-for-Kernel-Module-Programming.md">Setting Up the Development Environment for Kernel Module Programming</a></li>
+      <li><a href="kernel_module_dev/Writing-and-Compiling-Your-First-Kernel-Module.md">Writing and Compiling Your First Kernel Module</a></li>
+      <li><a href="kernel_module_dev/Loading-and-Unloading-Kernel-Modules.md">Loading and Unloading Kernel Modules</a></li>
+      <li><a href="kernel_module_dev/Exploring-Kernel-Symbols-and-Using-printk-for-Debugging.md">Exploring Kernel Symbols and Using <code class="language-plaintext highlighter-rouge">printk</code> for Debugging</a></li>
+      <li><a href="kernel_module_dev/Working-with-Module-Parameters-and-Command-Line-Arguments.md">Working with Module Parameters and Command Line Arguments</a></li>
+      <li><a href="kernel_module_dev/Managing-Module-Dependencies.md">Managing Module Dependencies</a></li>
+      <li><a href="kernel_module_dev/Understanding-Kernel-and-User-Space-Interaction.md">Understanding Kernel and User Space Interaction</a></li>
+      <li><a href="kernel_module_dev/Error-Handling-and-Best-Practices-in-Kernel-Module-Development.md">Error Handling and Best Practices in Kernel Module Development</a></li>
+      <li><a href="kernel_module_dev/Exploring-the-Kernel-Module-Lifecycle.md">Exploring the Kernel Module Lifecycle</a></li>
+    </ol>
+  </li>
 </ul>
 
-<h2 id="about-us">About Us</h2>
+<hr />
 
-<p>EmbedLinuxAcademy provides in-depth tutorials and resources for developers focused on embedded systems and Linux kernel development.</p>
+<ul>
+  <li><strong>Device Driver Development</strong>
+    <ol>
+      <li><a href="device_driver_dev/Introduction-to-Linux-Device-Drivers.md">Introduction to Linux Device Drivers</a></li>
+      <li><a href="device_driver_dev/Setting-Up-the-Environment-for-Device-Driver-Development.md">Setting Up the Environment for Device Driver Development</a></li>
+      <li><a href="device_driver_dev/Writing-a-Simple-Character-Device-Driver.md">Writing a Simple Character Device Driver</a></li>
+      <li><a href="device_driver_dev/Registering-a-Device-with-the-Kernel-Major-and-Minor-Numbers.md">Registering a Device with the Kernel: Major and Minor Numbers</a></li>
+      <li><a href="device_driver_dev/Kernel-Device-Model-Understanding-Udev-and-Sysfs.md">Kernel Device Model: Understanding Udev and Sysfs</a></li>
+      <li><a href="device_driver_dev/Interrupt-Handling-in-Device-Drivers.md">Interrupt Handling in Device Drivers</a></li>
+      <li><a href="device_driver_dev/Working-with-IOCTL-and-Device-Control-Interfaces.md">Working with IOCTL and Device Control Interfaces</a></li>
+      <li><a href="device_driver_dev/Memory-Management-in-Device-Drivers.md">Memory Management in Device Drivers</a></li>
+      <li><a href="device_driver_dev/Direct-Memory-Access-DMA-in-Device-Drivers.md">Direct Memory Access (DMA) in Device Drivers</a></li>
+      <li><a href="device_driver_dev/Writing-PCI-USB-Device-Drivers.md">Writing PCI/USB Device Drivers</a></li>
+      <li><a href="device_driver_dev/Debugging-and-Tracing-Device-Drivers.md">Debugging and Tracing Device Drivers</a></li>
+      <li><a href="device_driver_dev/Concurrency-and-Synchronization-in-Device-Drivers.md">Concurrency and Synchronization in Device Drivers</a></li>
+      <li><a href="device_driver_dev/Error-Handling-and-Returning-Status-Codes-in-Device-Drivers.md">Error Handling and Returning Status Codes in Device Drivers</a></li>
+      <li><a href="device_driver_dev/Testing-and-Debugging-Device-Drivers-Tools-and-Techniques.md">Testing and Debugging Device Drivers: Tools and Techniques</a></li>
+      <li><a href="device_driver_dev/Writing-Network-Device-Drivers.md">Writing Network Device Drivers</a></li>
+    </ol>
+  </li>
+</ul>
+
+<hr />
+
 
         </section>
     </div>

@@ -2,3 +2,10 @@ title: "EmbedLinuxAcademy"
 description: "C, C++, Embedded Linux, Yocto build, kernel driver tutorials"
 google_analytics:
 theme: jekyll-theme-hacker
+markdown: kramdown
+permalink: pretty
+defaults:
+  - scope:
+      path: ""
+    values:
+      lang: "en"
